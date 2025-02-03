@@ -7,7 +7,7 @@ async function fetchTrendingAnime() {
   try {
       const response = await fetch("https://api.jikan.moe/v4/top/anime");
       const data = await response.json();
-      displayItems(data.data, "animeResults"); // Use `data.data` for Jikan v4
+      displayItems(data.data, "animeResults");
   } catch (error) {
       console.error("Error fetching anime:", error);
   }
@@ -17,7 +17,7 @@ async function fetchTrendingManga() {
   try {
       const response = await fetch("https://api.jikan.moe/v4/top/manga");
       const data = await response.json();
-      displayItems(data.data, "mangaResults"); // Use `data.data` for Jikan v4
+      displayItems(data.data, "mangaResults");
   } catch (error) {
       console.error("Error fetching manga:", error);
   }
