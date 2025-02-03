@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Kawaii Anime & Manga Hub ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Trending Anime & Manga 🌸</h1>
+        <div class="tabs">
+            <button class="tab active" onclick="showSection('anime')">Anime</button>
+            <button class="tab" onclick="showSection('manga')">Manga</button>
+        </div>
+
+        <div id="animeSection" class="content-section">
+            <h2>✨ Trending Anime ✨</h2>
+            <div id="animeResults" class="grid"></div>
+        </div>
+
+        <div id="mangaSection" class="content-section hidden">
+            <h2>📖 Trending Manga 📖</h2>
+            <div id="mangaResults" class="grid"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

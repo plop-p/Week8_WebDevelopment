@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Stringify Example</title>
+</head>
+<body>
+  <h1>JSON Stringify Example</h1>
+  <p id="jsonOutput"></p>
+
+  <script>
+    const person = {
+      name: "Alice",
+      age: 25,
+      hobbies: ["reading", "cycling", "coding"]
+    };
+
+    const jsonString = JSON.stringify(person);
+
+    document.getElementById('jsonOutput').textContent = jsonString;
+  </script>
+</body>
+</html>
